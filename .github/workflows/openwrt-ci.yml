@@ -50,6 +50,9 @@ jobs:
 
       - name: Generate configuration file
         run: make defconfig
+        
+      -name:ssh make menuconfig 
+      
 
       - name: Download packages
         run: make download -j16
